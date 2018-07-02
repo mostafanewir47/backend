@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'uport-connect' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'uport-connect', null ]
+6 verbose cache add name=undefined spec="uport-connect" args=["uport-connect",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'uport-connect',
+7 verbose parsed url   path: 'uport-connect',
+7 verbose parsed url   href: 'uport-connect' }
+8 silly lockFile b6ed5996-uport-connect uport-connect
+9 verbose lock uport-connect /root/.npm/b6ed5996-uport-connect.lock
+10 silly lockFile b6ed5996-uport-connect uport-connect
+11 silly lockFile b6ed5996-uport-connect uport-connect
+12 verbose addNamed [ 'uport-connect', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 8341149c-uport-connect uport-connect@
+15 verbose lock uport-connect@ /root/.npm/8341149c-uport-connect.lock
+16 silly addNameRange { name: 'uport-connect', range: '*', hasData: false }
+17 verbose url raw uport-connect
+18 verbose url resolving [ 'https://registry.npmjs.org/', './uport-connect' ]
+19 verbose url resolved https://registry.npmjs.org/uport-connect
+20 info trying registry request attempt 1 at 17:51:56
+21 http GET https://registry.npmjs.org/uport-connect
+22 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+23 info trying registry request attempt 2 at 17:52:06
+24 http GET https://registry.npmjs.org/uport-connect
+25 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+26 info trying registry request attempt 3 at 17:53:06
+27 http GET https://registry.npmjs.org/uport-connect
+28 silly lockFile 8341149c-uport-connect uport-connect@
+29 silly lockFile 8341149c-uport-connect uport-connect@
+30 error Error: CERT_UNTRUSTED
+30 error     at SecurePair.<anonymous> (tls.js:1370:32)
+30 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+30 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+30 error     at CleartextStream.read [as _read] (tls.js:469:13)
+30 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+30 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+30 error     at doWrite (_stream_writable.js:223:10)
+30 error     at writeOrBuffer (_stream_writable.js:213:5)
+30 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+30 error     at write (_stream_readable.js:583:24)
+31 error If you need help, you may report this log at:
+31 error     <http://github.com/isaacs/npm/issues>
+31 error or email it to:
+31 error     <npm-@googlegroups.com>
+32 error System Linux 4.15.12-x86_64-linode105
+33 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "uport-connect"
+34 error cwd /noshdocuments/nosh2
+35 error node -v v0.10.25
+36 error npm -v 1.3.10
+37 verbose exit [ 1, true ]
